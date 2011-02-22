@@ -1,2 +1,3 @@
-demo/audio/tests
-demo/audio/output.mp3
+audio/tests
+audio/output.mp3
+audio/output*
