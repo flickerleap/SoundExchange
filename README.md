@@ -5,11 +5,18 @@ What you need to manipulate audio in PHP
 ----------------------------------------
 
 Requirements
+
 1. PHP 5
+
 2. sox installed on your server
 	http://sox.sourceforge.net/
 	Linux (Ubuntu): sudo apt-get install sox
 	Max OS X: sudo port install sox
+	
+Optional
+
+1. lame mp3 encoder
+	http://lame.sourceforge.net/
 
 What you get
 ------------
