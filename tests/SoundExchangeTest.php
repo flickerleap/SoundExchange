@@ -15,7 +15,7 @@ class SoundExchangeTest extends PHPUnit_Framework_TestCase
 	protected $_fileBase2;
 	protected $_fileBaseOutput;
 	
-	public class setup()
+	public function setup()
 	{
 		$this->_basedir = dirname(__DIR__);
 		$this->_file1 = $this->_basedir.'audio/breaks.mp3';
@@ -25,22 +25,45 @@ class SoundExchangeTest extends PHPUnit_Framework_TestCase
 		$this->_fileBaseOutput = $this->_basedir.'/audio/tests/output';
 	}
 	
-	public class teardown()
+	public function teardown()
 	{
 		// delete any test files here
 	}
 	
-	public class mixTest()
+	public function testMix()
 	{
 		
 	}
 	
-	public class concatontateTest()
+	public function testConcatontate()
 	{
 		
 	}
 	
-	public class 
-}
+	public function testTrim()
+	{
+		
+	}
+	
+	public function testInfo()
+	{
+		
+	}
+	
+	public function testStats()
+	{
+		
+	}
+	
+	public function testConvert()
+	{
+		
+	}
+	
+	public function testSox()
+	{
+		
+	}
 
+}
 ?>
