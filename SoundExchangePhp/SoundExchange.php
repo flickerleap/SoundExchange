@@ -32,9 +32,16 @@ class SoundExchange
 	 */
 	public static function mix($filenames, $outputFile, $bitrate = 128)
 	{
-		$cmd = "sox -m $file1 $file2 $outputFile";
-		$msg = exec($cmd);
+		if (is_array($filenames) AND (count($filenames) > 1))
+		{
+			$files = implode(" ", $filenames);
+			$cmd = "sox -m $files $outputFile";
+		} else
+		{
+			$msg = "You must submit an array of 2 or more files";
+		}
 		
+		$msg = exec($cmd);		
 		error_log('cmd: '.$cmd);
 		
 		return $msg;
@@ -81,7 +88,7 @@ class SoundExchange
 	 * @param String $filename
 	 * @return Array $infoArray 
 	 */
-	public static function info($filename)
+	public static function stats($filename)
 	{
 		$cmd = "sox $filename -e stat";
 		$output = array();
