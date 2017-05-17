@@ -1,3 +1,5 @@
 audio/tests/*.mp3
 audio/test/*.wav
 audio/output*
+
+/vendor/

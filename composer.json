@@ -1,0 +1,14 @@
+{
+    "name": "flickerleap/sox-php",
+    "description": "A PHP Wrapper for SoundExchange (or SoX).",
+    "type": "library",
+    "license": "GPL-3.0+",
+    "authors": [
+        {
+            "name": "Flicker Leap",
+            "email": "admin@flickerleap.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
